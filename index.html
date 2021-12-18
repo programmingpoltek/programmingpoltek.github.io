@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="frontend/libraries/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.min.css">
 
   <link rel="stylesheet" href="frontend/styles/main.css">
@@ -19,6 +20,7 @@
 <body>
 
   <div class="rectangle"></div>
+  <!-- START : NAVBAR -->
   <div class="container">
     <nav class='row navbar navbar-expand-lg navbar-light'>
       <a href="#" class='navbar-brand'>
@@ -53,8 +55,9 @@
       </div>
     </nav>
   </div>
+  <!-- END : NAVBAR -->
 
-  <!-- Header -->
+  <!-- START : Header -->
   <header class="text-left">
     <h1>
       Pengacara Berpengalaman
@@ -71,33 +74,36 @@
       Tentang Kami
     </a>
   </header>
+  <!-- END : NAVBAR -->
 
   <!-- START MAIN -->
   <main>
+
+    <!-- START : SECTION LAWYER -->
     <section class="section-lawyer-content" id="popularContent">
       <div class="container">
         <div class="section-popular-package row justify-content-center">
           <div class="col-sm-6 col-md-4 col-lg-4">
-            <div class="card-travel  d-flex flex-column" style="background-image: url(frontend/images/populer-1.jpg);">
+            <div class="card-travel  d-flex flex-column">
               <div class="travel-country">
-                <img src="frontend/images/home.svg" alt="">
+                <img src="frontend/images/home.svg" alt="" width='80px'>
               </div>
               <div class="travel-location">Praktik Umum</div>
               <div class="main">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem cumque tempora iusto iure quos corporis cum
                   dolore debitis quae, laboriosam tenetur repellat magni expedita natus illo, recusandae fuga, soluta non.</p>
               </div>
-              <div class="travel-button mt-auto">
-                <a href="details.html" class="btn btn-travel-details ">
+              <div class="travel-button">
+                <a href="details.html" class="btn btn-travel-details ">Read More
 
               </div>
               </a>
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-4">
-            <div class="card-mediation  d-flex flex-column" style="background-image: url(frontend/images/populer-1.jpg);">
+            <div class="card-mediation  d-flex flex-column">
               <div class="travel-country">
-                <img src="frontend/images/sertificate.svg" alt="">
+                <img src="frontend/images/sertificate.svg" alt="" width='60px'>
               </div>
               <div class="travel-location">Praktik Umum</div>
               <div class="main">
@@ -105,24 +111,23 @@
                   dolore debitis quae, laboriosam tenetur repellat magni expedita natus illo, recusandae fuga, soluta non.</p>
               </div>
               <div class="travel-button mt-auto">
-                <a href="details.html" class="btn btn-travel-details ">
-
+                <a href="details.html" class="btn btn-travel-details ">Read More
               </div>
               </a>
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-4">
-            <div class="card-travel  d-flex flex-column" style="background-image: url(frontend/images/populer-1.jpg);">
+            <div class="card-travel  d-flex flex-column">
               <div class="travel-country">
-                <img src="frontend/images/mediasi.svg" alt="">
+                <img src="frontend/images/mediasi.svg" alt="" width='80px'>
               </div>
               <div class="travel-location">Praktik Umum</div>
               <div class="main">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem cumque tempora iusto iure quos corporis cum
                   dolore debitis quae, laboriosam tenetur repellat magni expedita natus illo, recusandae fuga, soluta non.</p>
               </div>
-              <div class="travel-button mt-auto">
-                <a href="details.html" class="btn btn-travel-details ">
+              <div class="travel-button">
+                <a href="details.html" class="btn btn-travel-details ">Read More
 
               </div>
               </a>
@@ -132,31 +137,218 @@
       </div>
       </div>
     </section>
+    <!--  START : SECTION LAWYER-->
 
-
-    <section class="section section-gallery-content" id="testimonialContent">
+    <!-- START -->
+    <section class="section-gallery">
       <div class="container">
-        <div class="section-popular-travel row justify-content-center">
-          <div class="col-sm-6 col-md-6 col-lg-4">
-            <div class="card card-testimonial text-center">
-              <div class="testimonial-content">
-                <img src="frontend/images/user_pict1.png" alt="user" class="mb-4 rounded-circle">
-                <h3 class="mb-4">Aditya Gustian</h3>
-                <p class="testimonial">
+        <div class="row">
+          <div class="col text-center section-galery-heading mt-3">
+            <h2><u>Gallery</u></h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-gallery-content">
+      <div class="container">
+        <div class="section-gallery-lawyer row justify-content-center">
+          <div class="col-sm-6 col-md-5 col-lg-4">
+            <div class="card card-gallery text-left">
+              <img src="frontend/images/img-news.png" alt="">
+              <table>
+                <tr>
+                  <th width="50%">
+                    <i class="far fa-clock"></i>
+                    23/12/2021</th>
+                  <td width="50%" class='text-right'>
+                    <i class="far fa-user"></i>
+                    Public Relation
+                  </td>
+                </tr>
+              </table>
+              <div class="gallery-content">
+                <h3 class='mb-4'>Advokat take care for problem in the common community</h3>
+                <p class='testimonial'>
                   " I feel I am very excited to follow Kivia Travel's travels because here it presents a very fun and
                   new travel sensation. Thanks for his journey "
                 </p>
+                <div class="lawyer-button">
+                  <a href="" class="btn btn-gallery-content">Read More <i class=" fas fa-chevron-right"></i></a>
+                </div>
               </div>
-              <hr>
-              <p class="trip-to mt-2">
-                Trip to Deratan
-              </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-5 col-lg-4">
+            <div class="card card-gallery text-left">
+              <img src="frontend/images/img-news.png" alt="">
+              <table>
+                <tr>
+                  <th width="50%">
+                    <i class="far fa-clock"></i>
+                    23/12/2021</th>
+                  <td width="50%" class='text-right'>
+                    <i class="far fa-user"></i>
+                    Public Relation
+                  </td>
+                </tr>
+              </table>
+              <div class="gallery-content">
+                <h3 class='mb-4'>Advokat take care for problem in the common community</h3>
+                <p class='testimonial'>
+                  " I feel I am very excited to follow Kivia Travel's travels because here it presents a very fun and
+                  new travel sensation. Thanks for his journey "
+                </p>
+                <div class="lawyer-button">
+                  <a href="" class="btn btn-gallery-content">Read More <i class=" fas fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-5 col-lg-4">
+            <div class="card card-gallery text-left">
+              <img src="frontend/images/img-news.png" alt="">
+              <table>
+                <tr>
+                  <th width="50%">
+                    <i class="far fa-clock"></i>
+                    23/12/2021</th>
+                  <td width="50%" class='text-right'>
+                    <i class="far fa-user"></i>
+                    Public Relation
+                  </td>
+                </tr>
+              </table>
+              <div class="gallery-content">
+                <h3 class='mb-4'>Advokat take care for problem in the common community</h3>
+                <p class='testimonial'>
+                  " I feel I am very excited to follow Kivia Travel's travels because here it presents a very fun and
+                  new travel sensation. Thanks for his journey "
+                </p>
+                <div class="lawyer-button">
+                  <a href="" class="btn btn-gallery-content">Read More <i class=" fas fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-5 col-lg-4">
+            <div class="card card-gallery text-left">
+              <img src="frontend/images/img-news.png" alt="">
+              <table>
+                <tr>
+                  <th width="50%">
+                    <i class="far fa-clock"></i>
+                    23/12/2021</th>
+                  <td width="50%" class='text-right'>
+                    <i class="far fa-user"></i>
+                    Public Relation
+                  </td>
+                </tr>
+              </table>
+              <div class="gallery-content">
+                <h3 class='mb-4'>Advokat take care for problem in the common community</h3>
+                <p class='testimonial'>
+                  " I feel I am very excited to follow Kivia Travel's travels because here it presents a very fun and
+                  new travel sensation. Thanks for his journey "
+                </p>
+                <div class="lawyer-button">
+                  <a href="" class="btn btn-gallery-content">Read More <i class=" fas fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-5 col-lg-4">
+            <div class="card card-gallery text-left">
+              <img src="frontend/images/img-news.png" alt="">
+              <table>
+                <tr>
+                  <th width="50%">
+                    <i class="far fa-clock"></i>
+                    23/12/2021</th>
+                  <td width="50%" class='text-right'>
+                    <i class="far fa-user"></i>
+                    Public Relation
+                  </td>
+                </tr>
+              </table>
+              <div class="gallery-content">
+                <h3 class='mb-4'>Advokat take care for problem in the common community</h3>
+                <p class='testimonial'>
+                  " I feel I am very excited to follow Kivia Travel's travels because here it presents a very fun and
+                  new travel sensation. Thanks for his journey "
+                </p>
+                <div class="lawyer-button">
+                  <a href="" class="btn btn-gallery-content">Read More <i class=" fas fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-5 col-lg-4">
+            <div class="card card-gallery text-left">
+              <img src="frontend/images/img-news.png" alt="">
+              <table>
+                <tr>
+                  <th width="50%">
+                    <i class="far fa-clock"></i>
+                    23/12/2021</th>
+                  <td width="50%" class='text-right'>
+                    <i class="far fa-user"></i>
+                    Public Relation
+                  </td>
+                </tr>
+              </table>
+              <div class="gallery-content">
+                <h3 class='mb-4'>Advokat take care for problem in the common community</h3>
+                <p class='testimonial'>
+                  " I feel I am very excited to follow Kivia Travel's travels because here it presents a very fun and
+                  new travel sensation. Thanks for his journey "
+                </p>
+                <div class="lawyer-button">
+                  <a href="" class="btn btn-gallery-content">Read More <i class=" fas fa-chevron-right"></i></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+
+
+    <!-- <section class="section section-gallery-content" id="testimonialContent">
+      <div class="container">
+        <div class="text-center">
+          <h2>Gallery
+          </h2>
+          <hr>
+          <i class="bi bi-type-underline"></i>
+        </div>
+      </div>
+      </div>
+      <div class="section-popular-travel row justify-content-center">
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="card card-testimonial text-center">
+            <div class="testimonial-content">
+              <img src="frontend/images/img-news.png" alt="user" class="gallery-content">
+              <h3 class=" mb-4">Aditya Gdustian</h3>
+              <p class="testimonial">
+
+              </p>
+            </div>
+            <hr>
+            <p class="trip-to mt-2">
+              Trip to Deratan
+            </p>
+          </div>
+        </div>
+
+      </div>
+      </div>
+    </section> -->
+    <!-- END -->
+
+
+    <!-- START : C -->
     <section class="section-popular-content" id="popularContent">
       <div class="container">
         <div class="section-popular-travel row justify-content-center">
@@ -182,7 +374,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
+          <!-- <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="card-travel text-center d-flex flex-column" style="background-image:url(frontend/images/populer-3.jpg)">
               <div class="travel-country">INDONESIA</div>
               <div class="travel-location">BOROBUDUR</div>
@@ -192,20 +384,8 @@
                 </a>
               </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="card-travel text-center d-flex flex-column" style="background-image:url('frontend/images/populer-4.jpg') ;">
-              <div class="travel-country">INDONESIA</div>
-              <div class="travel-location">NUSA PENIDA</div>
-              <div class="travel-button mt-auto">
-                <a href="details.html" class="btn btn-travel-details ">
-                  View Details
-                </a>
-              </div>
-            </div>
-          </div>
+          </div> -->
         </div>
-      </div>
     </section>
 
     <section class="section-networks" id="networks">
@@ -255,8 +435,6 @@
                 <img src="frontend/images/user_pict1.png" alt="user" class="mb-4 rounded-circle">
                 <h3 class="mb-4">Aditya Gustian</h3>
                 <p class="testimonial">
-                  " I feel I am very excited to follow Kivia Travel's travels because here it presents a very fun and
-                  new travel sensation. Thanks for his journey "
                 </p>
               </div>
               <hr>
@@ -265,36 +443,7 @@
               </p>
             </div>
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-4">
-            <div class="card card-testimonial text-center">
-              <div class="testimonial-content">
-                <img src="frontend/images/user_pict2.png" alt="user" class="mb-4 rounded-circle">
-                <h3 class="mb-4">Julia Elisabeth</h3>
-                <p class="testimonial">
-                  " The trip was amazing and I saw something beautiful in that island that makes me want to learn more "
-                </p>
-              </div>
-              <hr>
-              <p class="trip-to mt-2">
-                Trip to Bromo
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-4">
-            <div class="card card-testimonial text-center">
-              <div class="testimonial-content">
-                <img src="frontend/images/user_pict.png" alt="user" class="mb-4 rounded-circle">
-                <h3 class="mb-4">Micheal Kevin</h3>
-                <p class="testimonial">
-                  " I loved it when the waves was shaking harder - I was scared too"
-                </p>
-              </div>
-              <hr>
-              <p class="trip-to mt-2">
-                Trip to Karimun Java
-              </p>
-            </div>
-          </div>
+
         </div>
         <div class="row">
           <div class="col-12 text-center">
