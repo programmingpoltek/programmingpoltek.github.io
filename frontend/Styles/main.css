@@ -1,5 +1,5 @@
 body {
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   font-family: "Assistant", sans-serif;
   color: #071c4d;
 }
@@ -19,6 +19,15 @@ body {
 .navbar-light .navbar-nav .nav-link.active {
   font-weight: bold;
   color: #fff !important;
+}
+
+.nav-item .nav-link img {
+  margin-top: 0px;
+}
+
+.dropdown-menu.show {
+  background-color: #9F8D5F;
+  opacity: 0.8;
 }
 
 .btn-navbar-right {
@@ -42,7 +51,6 @@ body {
 header {
   padding: 180px 0 165px;
   margin-top: -70px;
-  padding-left: 121px;
   background-image: url("../images/header.png");
   background-size: cover;
 }
@@ -74,6 +82,10 @@ header .btn-see-more:hover {
   color: #fff;
 }
 
+header .btn-outline-secondary {
+  border-radius: 26px;
+}
+
 header .btn-about-me {
   background-color: transparent;
   border: turquoise;
@@ -84,26 +96,6 @@ header .btn-about-me {
 header .btn-about-me:hover {
   background-color: #d1bd8b;
   color: #fff;
-}
-
-.section-stats {
-  margin-top: -50px;
-}
-
-.section-stats .stats-detail {
-  padding-top: 18px;
-  background-color: #fff;
-  padding-left: 60px;
-}
-
-.section-stats h2 {
-  font-size: 30px;
-  margin-bottom: 0;
-}
-
-.section-stats p {
-  font-size: 20px;
-  font-weight: lighter;
 }
 
 .section-popular {
@@ -132,9 +124,41 @@ header .btn-about-me:hover {
   font-size: 18px;
 }
 
-.section-gallery {
-  margin-top: 120px;
+.section-gallery-2 {
+  min-height: 540px;
+  background-color: #9F8D5F;
+  margin-top: 150px;
   margin-bottom: 80px;
+}
+
+.section-gallery-2 .section-galery-heading2 {
+  margin-top: 30px;
+}
+
+.section-gallery-2 .section-galery-heading2 h2,
+.section-gallery-2 .section-galery-heading2 p {
+  color: white;
+}
+
+.section-gallery-2 .section-galery-heading2 h2 {
+  font-family: "Libre Baskerville";
+  font-weight: bold;
+  font-size: 32px;
+  padding-bottom: 0;
+}
+
+.section-gallery-2 .section-galery-heading2 h1 {
+  margin-top: -40px;
+}
+
+.section-gallery-2 .section-galery-heading2 p {
+  font-family: "Assistant", sans-serif;
+  font-size: 18px;
+}
+
+.section-gallery {
+  margin-top: -120px;
+  margin-bottom: 100px;
 }
 
 .section-gallery .section-galery-heading {
@@ -150,6 +174,11 @@ header .btn-about-me:hover {
   font-family: "Libre Baskerville";
   font-weight: bold;
   font-size: 40px;
+  padding-bottom: 0;
+}
+
+.section-gallery .section-galery-heading h1 {
+  margin-top: -40px;
 }
 
 .section-gallery .section-galery-heading p {
@@ -157,11 +186,67 @@ header .btn-about-me:hover {
   font-size: 18px;
 }
 
+.section-lawyer-content {
+  background-color: #F1F1F1;
+}
+
+.section-lawyer-content .section-popular-package .card-travel {
+  min-height: 630px;
+  background-color: #ddd;
+  padding: 30px;
+  background-size: cover;
+  margin-bottom: 120px;
+  margin-top: -100px;
+  background-position: center;
+}
+
+.section-lawyer-content .section-popular-package .card-travel img {
+  background-color: transparent;
+}
+
+.section-lawyer-content .section-popular-package .card-mediation {
+  min-height: 570px;
+  background-color: #9F8D5F;
+  padding: 30px;
+  background-size: cover;
+  margin-bottom: 120px;
+  margin-top: -100px;
+  background-position: center;
+}
+
+.section-lawyer-content .section-popular-package .card-mediation img {
+  background-color: transparent;
+}
+
+.section-lawyer-content .section-popular-package .travel-country {
+  font-size: 18px;
+  color: #fff;
+}
+
+.section-lawyer-content .section-popular-package .travel-location {
+  font-size: 26px;
+  color: #fff;
+  padding-left: 0px;
+}
+
+.section-lawyer-content .section-popular-package .main {
+  text-align: justify;
+}
+
+.section-lawyer-content .section-popular-package .travel-button .btn-travel-details {
+  background-color: #ff9e53;
+  color: #fff;
+}
+
+.section-lawyer-content .section-popular-package .travel-button .btn-travel-details:hover {
+  background-color: #af652c;
+  color: #fff;
+}
+
 .section-gallery-content .section-gallery-lawyer .card-gallery {
   min-height: 380px;
   background-color: #dddddd;
-  background-size: cover;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   background-position: center;
 }
 
@@ -187,56 +272,47 @@ header .btn-about-me:hover {
   color: #fff;
 }
 
-.section-lawyer-content {
-  background-color: #F1F1F1;
+.section-help-me {
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 
-.section-lawyer-content .section-popular-package .card-travel {
-  min-height: 380px;
-  background-color: #ddd;
-  padding: 30px;
-  background-size: cover;
-  margin-bottom: 20px;
-  margin-top: -100px;
-  background-position: center;
+.section-help-me .section-galery-header h2,
+.section-help-me .section-galery-header p {
+  color: #494A5D;
 }
 
-.section-lawyer-content .section-popular-package .card-travel img {
-  background-color: transparent;
+.section-help-me .section-galery-header h3 {
+  color: #9F8D5F;
+  font-family: "Libre Baskerville";
+  font-size: bold;
+  margin-top: 20px;
 }
 
-.section-lawyer-content .section-popular-package .card-mediation {
-  min-height: 380px;
-  background-color: #9F8D5F;
-  padding: 30px;
-  background-size: cover;
-  margin-bottom: 20px;
-  margin-top: -100px;
-  background-position: center;
+.section-help-me .section-galery-header h2 {
+  font-family: "Libre Baskerville";
+  font-weight: bold;
+  font-size: 28px;
+  padding-bottom: 0;
 }
 
-.section-lawyer-content .section-popular-package .card-mediation img {
-  background-color: transparent;
+.section-help-me .section-galery-header h1 {
+  margin-top: -40px;
 }
 
-.section-lawyer-content .section-popular-package .travel-country {
+.section-help-me .section-galery-header p {
+  font-family: "Assistant", sans-serif;
   font-size: 18px;
-  color: #fff;
 }
 
-.section-lawyer-content .section-popular-package .travel-location {
-  font-size: 26px;
+.section-help-me .btn-see-more {
+  background-color: #9F8D5F;
   color: #fff;
-  padding-left: 0px;
+  border-radius: 26px;
 }
 
-.section-lawyer-content .section-popular-package .travel-button .btn-travel-details {
-  background-color: #ff9e53;
-  color: #fff;
-}
-
-.section-lawyer-content .section-popular-package .travel-button .btn-travel-details:hover {
-  background-color: #af652c;
+.section-help-me .btn-see-more:hover {
+  background-color: #d1bd8b;
   color: #fff;
 }
 
@@ -375,247 +451,19 @@ header .btn-about-me:hover {
   color: #C3C3C3;
 }
 
-.section-footer a {
-  color: #071c4d;
+.section-footer {
+  background-color: #494A5D;
 }
 
-.section-details-header {
-  min-height: 310px;
-  background: #E4E6EB;
-  margin-top: -70px;
+.section-footer ul a {
+  color: #ffffff;
 }
 
-.section-details-content {
-  margin-top: -210px;
-  min-height: 100vh;
-}
-
-.section-details-content .breadcrumb {
-  background-color: transparent;
-  padding: 0;
-  padding-bottom: 30px;
-}
-
-.section-details-content .breadcrumb-item.active {
-  font-weight: bold;
-  color: #071c4d;
-}
-
-.card-details {
-  padding: 30px;
-  border-radius: 11 px;
-}
-
-.card-details h1 {
-  font-size: 26px;
-}
-
-.card-details h2 {
-  font-size: 20px;
-}
-
-.card-details p {
-  font-size: 18px;
-  color: #b1b1b1;
-}
-
-.card-details h3 {
-  font-weight: 300;
-  font-size: 14px;
-  color: #071c4d;
-}
-
-.card-details .trip-informations th {
-  font-weight: 300;
-  font-size: 18px;
-  color: #071c4d;
-}
-
-.card-details .trip-informations td {
-  font-weight: 300;
-  font-size: 18px;
-  color: #b1b1b1;
-}
-
-.card-details .trip-informations .text-blue {
-  color: #071c4d;
-  font-weight: bold;
-}
-
-.card-details .trip-informations .text-orange {
-  color: #ff9e53;
-  font-weight: bold;
-}
-
-.card-details .payment-instruction {
-  font-weight: 300;
-  font-size: 14px;
-  color: #b1b1b1;
-}
-
-.card-details .bank .bank-item h3 {
-  font-size: 18px;
-  color: #071c4d;
-  margin-bottom: 0;
-}
-
-.card-details .bank .bank-item p {
-  margin-bottom: 0;
-}
-
-.card-details .bank .bank-item .description {
-  margin-left: 10px;
-  overflow: hidden;
-  float: left;
-}
-
-.card-details .bank .bank-item .description p {
-  font-weight: normal;
-  font-size: 16px;
-  color: #071c4d;
-}
-
-.card-details .bank .bank-image {
-  width: 45px;
-  height: 45px;
-  float: left;
-}
-
-.card-details .disclaimer {
-  font-size: 14px;
-  font-weight: 300;
-  color: #b1b1b1;
-}
-
-.card-details .gj-datepicker .datepicker {
-  border-right: 0;
-}
-
-.card-details .gj-datepicker .input-group-append .btn {
-  padding-right: 30px;
-}
-
-.btn-add-now {
-  background-color: #071c4d;
+.section-footer h5 {
   color: #fff;
 }
 
-.btn-add-now:hover {
-  background-color: #183d94;
-  color: #fff;
-}
-
-.section-success {
-  height: 90vh;
-}
-
-.section-success h1 {
-  font-size: 27px;
-  font-weight: 600;
-  color: #071c4d;
-}
-
-.section-success p {
-  font-weight: 300;
-  font-size: 27;
-  color: #B1B1B1;
-}
-
-.section-success .btn-home-page {
-  border-radius: 4px;
-  background-color: #071c4d;
-  color: #fff;
-}
-
-.section-success .btn-home-page:hover {
-  background-color: #1644af;
-  color: #fff;
-}
-
-.card-right {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 100%;
-  border-bottom: none;
-}
-
-.features {
-  margin-top: 20px;
-}
-
-.features h3 {
-  font-size: 18px;
-  color: #071c4d;
-  margin-bottom: 0;
-}
-
-.features p {
-  margin-bottom: 0;
-}
-
-.features .description {
-  margin-left: 20px;
-  overflow: hidden;
-  float: left;
-}
-
-.features .description-1 {
-  margin-left: 20px;
-  margin-top: -10px;
-  overflow: hidden;
-  float: left;
-}
-
-.features .description-1 p {
-  height: 21px;
-  color: #071c4d;
-}
-
-.features .features-image {
-  width: 45px;
-  height: 45px;
-  float: left;
-}
-
-.gallery .xzoom-container {
-  display: block;
-}
-
-.gallery .xzoom-container .xzoom {
-  width: 100%;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  margin-bottom: 10px;
-}
-
-.gallery .xzoom-container .xactive {
-  border: 4px solid #1ABC9C;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.members .members-image {
-  width: 40px;
-  height: 40px;
-}
-
-.join-container {
-  margin-top: -16px;
-}
-
-.btn-join-now {
-  background-color: #ff9e53;
-  color: #fff;
-  border-radius: 0;
-}
-
-.btn-join-now:hover {
-  background-color: #ffa45e;
-  color: #fff;
-}
-
-.card-right {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom: 0;
+.container-fluid {
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */

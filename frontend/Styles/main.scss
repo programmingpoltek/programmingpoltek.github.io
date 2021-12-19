@@ -1,5 +1,5 @@
 body {
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   font-family: "Assistant", sans-serif;
   color: #071c4d;
 }
@@ -21,12 +21,31 @@ body {
     .nav-link {
       color: #fff;
 
+
       &.active {
         font-weight: bold;
         color: #fff !important;
+
+
+
       }
+
+
     }
   }
+}
+
+.nav-item {
+  .nav-link {
+    img {
+      margin-top: 0px;
+    }
+  }
+}
+
+.dropdown-menu.show {
+  background-color: #9F8D5F;
+  opacity: 0.8;
 }
 
 .btn-navbar-right {
@@ -53,7 +72,6 @@ body {
 header {
   padding: 180px 0 165px;
   margin-top: -70px;
-  padding-left: 121px;
   background-image: url("../images/header.png");
   background-size: cover;
 
@@ -84,6 +102,10 @@ header {
     }
   }
 
+  .btn-outline-secondary {
+    border-radius: 26px;
+  }
+
   .btn-about-me {
     background-color: transparent;
     border: turquoise;
@@ -97,26 +119,6 @@ header {
   }
 }
 
-// Statistics
-.section-stats {
-  margin-top: -50px;
-
-  .stats-detail {
-    padding-top: 18px;
-    background-color: #fff;
-    padding-left: 60px;
-  }
-
-  h2 {
-    font-size: 30px;
-    margin-bottom: 0;
-  }
-
-  p {
-    font-size: 20px;
-    font-weight: lighter;
-  }
-}
 
 .section-popular {
   background-color: #051334;
@@ -148,22 +150,32 @@ header {
 
 
 // Popular
-.section-gallery {
-  margin-top: 120px;
+.section-gallery-2 {
+  min-height: 540px;
+  background-color: #9F8D5F;
+  margin-top: 150px;
   margin-bottom: 80px;
 
-  .section-galery-heading {
-    margin-top: 150px;
+
+  .section-galery-heading2 {
+    margin-top: 30px;
+
 
     h2,
     p {
-      color: rgb(14, 6, 82);
+      color: rgb(255, 255, 255);
     }
+
 
     h2 {
       font-family: "Libre Baskerville";
       font-weight: bold;
-      font-size: 40px;
+      font-size: 32px;
+      padding-bottom: 0;
+    }
+
+    h1 {
+      margin-top: -40px;
     }
 
     p {
@@ -173,13 +185,107 @@ header {
   }
 }
 
+
+.section-gallery {
+  margin-top: -120px;
+  margin-bottom: 100px;
+
+  .section-galery-heading {
+    margin-top: 150px;
+
+    h2,
+    p {
+      color: rgb(14, 6, 82);
+    }
+
+
+    h2 {
+      font-family: "Libre Baskerville";
+      font-weight: bold;
+      font-size: 40px;
+      padding-bottom: 0;
+    }
+
+    h1 {
+      margin-top: -40px;
+    }
+
+    p {
+      font-family: "Assistant", sans-serif;
+      font-size: 18px;
+    }
+  }
+}
+
+
+.section-lawyer-content {
+  background-color: #F1F1F1;
+
+  .section-popular-package {
+    .card-travel {
+      min-height: 630px;
+      background-color: #ddd;
+      padding: 30px;
+      background-size: cover;
+      margin-bottom: 120px;
+      margin-top: -100px;
+      background-position: center;
+
+      img {
+        background-color: transparent;
+      }
+    }
+
+    .card-mediation {
+      min-height: 570px;
+      background-color: #9F8D5F;
+      padding: 30px;
+      background-size: cover;
+      margin-bottom: 120px;
+      margin-top: -100px;
+      background-position: center;
+
+      img {
+        background-color: transparent;
+      }
+    }
+
+    .travel-country {
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .travel-location {
+      font-size: 26px;
+      color: #fff;
+      padding-left: 0px;
+
+    }
+
+    .main {
+      text-align: justify;
+    }
+
+    .travel-button {
+      .btn-travel-details {
+        background-color: #ff9e53;
+        color: #fff;
+
+        &:hover {
+          background-color: #af652c;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
 .section-gallery-content {
   .section-gallery-lawyer {
     .card-gallery {
       min-height: 380px;
       background-color: #dddddd;
-      background-size: cover;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
       background-position: center;
 
       table {
@@ -216,63 +322,54 @@ header {
 
 }
 
-.section-lawyer-content {
-  background-color: #F1F1F1;
+.section-help-me {
+  margin-top: 150px;
+  margin-bottom: 150px;
 
-  .section-popular-package {
-    .card-travel {
-      min-height: 380px;
-      background-color: #ddd;
-      padding: 30px;
-      background-size: cover;
-      margin-bottom: 20px;
-      margin-top: -100px;
-      background-position: center;
+  .section-galery-header {
 
-      img {
-        background-color: transparent;
-      }
+
+    h2,
+    p {
+      color: #494A5D;
     }
 
-    .card-mediation {
-      min-height: 380px;
-      background-color: #9F8D5F;
-      padding: 30px;
-      background-size: cover;
-      margin-bottom: 20px;
-      margin-top: -100px;
-      background-position: center;
-
-      img {
-        background-color: transparent;
-      }
+    h3 {
+      color: #9F8D5F;
+      font-family: "Libre Baskerville";
+      font-size: bold;
+      margin-top: 20px;
     }
 
-    .travel-country {
+
+    h2 {
+      font-family: "Libre Baskerville";
+      font-weight: bold;
+      font-size: 28px;
+      padding-bottom: 0;
+    }
+
+    h1 {
+      margin-top: -40px;
+    }
+
+    p {
+      font-family: "Assistant", sans-serif;
       font-size: 18px;
-      color: #fff;
     }
+  }
 
-    .travel-location {
-      font-size: 26px;
+  .btn-see-more {
+    background-color: #9F8D5F;
+    color: #fff;
+    border-radius: 26px;
+
+    &:hover {
+      background-color: #d1bd8b;
       color: #fff;
-      padding-left: 0px;
-    }
-
-    .travel-button {
-      .btn-travel-details {
-        background-color: #ff9e53;
-        color: #fff;
-
-        &:hover {
-          background-color: #af652c;
-          color: #fff;
-        }
-      }
     }
   }
 }
-
 
 
 .section-popular-content {
@@ -417,272 +514,17 @@ header {
 }
 
 .section-footer {
-  a {
-    color: #071c4d
-  }
-}
-
-.section-details-header {
-  min-height: 310px;
-  background: #E4E6EB;
-  margin-top: -70px;
-}
-
-.section-details-content {
-  margin-top: -210px;
-  min-height: 100vh;
-
-  .breadcrumb {
-    background-color: transparent;
-    padding: 0;
-    padding-bottom: 30px;
+  ul a {
+    color: #ffffff
   }
 
-  .breadcrumb-item {
-    &.active {
-      font-weight: bold;
-      color: #071c4d;
-    }
-  }
-}
-
-.card-details {
-  padding: 30px;
-  border-radius: 11 px;
-
-  h1 {
-    font-size: 26px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  p {
-    font-size: 18px;
-    color: #b1b1b1;
-  }
-
-  h3 {
-    font-weight: 300;
-    font-size: 14px;
-    color: #071c4d;
-  }
-
-  .trip-informations {
-    th {
-      font-weight: 300;
-      font-size: 18px;
-      color: #071c4d;
-    }
-
-    td {
-      font-weight: 300;
-      font-size: 18px;
-      color: #b1b1b1;
-    }
-
-    .text-blue {
-      color: #071c4d;
-      font-weight: bold
-    }
-
-    .text-orange {
-      color: #ff9e53;
-      font-weight: bold;
-    }
-  }
-
-  .payment-instruction {
-    font-weight: 300;
-    font-size: 14px;
-    color: #b1b1b1;
-  }
-
-  .bank {
-    .bank-item {
-      h3 {
-        font-size: 18px;
-        color: #071c4d;
-        margin-bottom: 0;
-      }
-
-      p {
-        margin-bottom: 0;
-      }
-
-      .description {
-        margin-left: 10px;
-        overflow: hidden;
-        float: left;
-
-        p {
-          font-weight: normal;
-          font-size: 16px;
-          color: #071c4d;
-        }
-      }
-    }
-
-    .bank-image {
-      width: 45px;
-      height: 45px;
-      float: left;
-    }
-  }
-
-  .disclaimer {
-    font-size: 14px;
-    font-weight: 300;
-    color: #b1b1b1;
-  }
-
-  .gj-datepicker {
-    .datepicker {
-      border-right: 0;
-    }
-
-    .input-group-append {
-      .btn {
-        padding-right: 30px;
-      }
-    }
-
-  }
-}
-
-.btn-add-now {
-  background-color: #071c4d;
-  color: #fff;
-
-  &:hover {
-    background-color: #183d94;
+  h5 {
     color: #fff;
   }
+
+  background-color: #494A5D;
 }
 
-.section-success {
-  height: 90vh;
-
-  h1 {
-    font-size: 27px;
-    font-weight: 600;
-    color: #071c4d;
-  }
-
-  p {
-    font-weight: 300;
-    font-size: 27;
-    color: #B1B1B1;
-  }
-
-  .btn-home-page {
-    border-radius: 4px;
-    background-color: #071c4d;
-    color: #fff;
-
-    &:hover {
-      background-color: #1644af;
-      color: #fff;
-    }
-
-  }
-
-
-}
-
-
-
-.card-right {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 100%;
-  border-bottom: none;
-}
-
-.features {
-  margin-top: 20px;
-
-  h3 {
-    font-size: 18px;
-    color: #071c4d;
-    margin-bottom: 0;
-  }
-
-  p {
-    margin-bottom: 0;
-
-  }
-
-  .description {
-    margin-left: 20px;
-    overflow: hidden;
-    float: left;
-  }
-
-  .description-1 {
-    margin-left: 20px;
-    margin-top: -10px;
-    overflow: hidden;
-    float: left;
-
-    p {
-      height: 21px;
-      color: #071c4d;
-    }
-  }
-
-  .features-image {
-    width: 45px;
-    height: 45px;
-    float: left;
-  }
-}
-
-.gallery {
-  .xzoom-container {
-    display: block;
-
-    .xzoom {
-      width: 100%;
-      box-shadow: none;
-      margin-bottom: 10px;
-
-    }
-
-    .xactive {
-      border: 4px solid #1ABC9C;
-      box-shadow: none;
-    }
-  }
-}
-
-.members {
-  .members-image {
-    width: 40px;
-    height: 40px;
-
-
-  }
-}
-
-.join-container {
-  margin-top: -16px;
-
-}
-
-.btn-join-now {
-  background-color: #ff9e53;
-  color: #fff;
-  border-radius: 0;
-
-  &:hover {
-    background-color: #ffa45e;
-    color: #fff;
-  }
-}
-
-.card-right {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom: 0;
+.container-fluid {
+  color: white;
 }
